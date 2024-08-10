@@ -1,0 +1,103 @@
+/* Container styling */
+.container-a {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 125px; /* Ensure this value is sufficient to clear the Navbar */
+}
+
+/* Table styling for orders */
+.order-table {
+  width: 100%;
+  border-collapse: separate; /* Separate borders */
+  border-spacing: 0 10px; /* Space between rows */
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-table th,
+.order-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 16px;
+}
+
+.order-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: 600;
+}
+
+.order-table td {
+  background-color: #fff;
+}
+
+.order-table tr:nth-child(even) td {
+  background-color: #fafafa;
+}
+
+.order-table tr:hover td {
+  background-color: #f1f1f1;
+}
+
+/* Summary section */
+.order-summary {
+  margin-top: 20px;
+  padding: 15px;
+  border-top: 2px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.order-summary .total-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Order Again Button */
+.btn__order-again {
+  padding: 10px 20px;
+  background-color: #28a745; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn__order-again:hover {
+  background-color: #218838; /* Darker green for hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Align button to the right */
+.order-summary-button-container {
+  text-align: right;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .order-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-summary h2,
+  .btn__order-again {
+    margin-top: 10px;
+  }
+}
